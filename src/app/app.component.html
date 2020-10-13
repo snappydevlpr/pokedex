@@ -1,0 +1,44 @@
+    <div *ngIf="displayGrid; then grid else selected"></div>
+    <ng-template #grid>
+        <div class="display">
+
+            <div class="pokemon-grid">
+                <div *ngFor="let name of pokedexPokemon; let indexOfelement=index;" class="pokemon-viewer">
+                    <div (click)="openStats(name.id)" id={{name.id}} class="pokemon-tile">
+                        <img class="pokemon-img" src={{name.img}}>
+                        <p class="pokemon-name">{{name.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ng-template>
+
+    <ng-template #selected>
+        <div class="display">
+            <div class="pokemon-single-view">
+                    <p>{{currentPokemon.name}}</p>
+                    <p>weight: {{currentPokemon.weight}}lb</p>
+                    <img class="pokemon-img" src={{currentPokemon.img}}>
+            </div>
+        </div>
+
+
+    </ng-template>
+<div class="controls">
+
+
+    <div class="dpad">
+        <div></div>
+        <button class="up" (click)="scrollUp()"></button>
+        <div></div>
+        <button class="left" (mousedown)="scrollLeft()"></button>
+        <button class="center"></button>
+        <button class="right" (mousedown)="scrollRight()"></button>
+        <div></div>
+        <button class="down" (mousedown)="scrollDown()"></button>
+        <div></div>
+    </div>
+    <button class="b-button" (click)="displayGrid = true" >B</button>
+    <button class="a-button" (click)="openStats()">A</button>
+</div>

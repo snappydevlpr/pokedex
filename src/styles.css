@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+p{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8pt;
+}
+html{ 
+    width: 100%;
+    height: 100%;
+
+}
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #dc0d2f;
+}

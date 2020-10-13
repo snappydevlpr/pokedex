@@ -1,0 +1,156 @@
+/*     background-color: #50a15d;
+
+    color: #274127;
+
+    background:#44874e;
+
+
+*/
+
+.display{
+    margin: 100px auto;
+    width: 100%;
+    min-width: 300px;
+}
+
+.pokemon-grid{
+    background-color: #50a15d;
+    display: grid;
+    border: white 30px solid;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    min-width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.pokemon-tile{
+    /* height: 100px;
+    width: 100px; */
+    text-align: center;
+    justify-self: center;
+}
+.pokemon-tile > img {
+    height: 60px;
+    width: 60px;
+}
+
+.pokemon-tile > p {
+    margin: 0;
+    padding-bottom: 5px;
+    
+}
+
+.pokemon-viewer{
+    margin: 0;
+    padding: 0;
+}
+
+.pokemon-single-view{
+    background-color: #50a15d;
+    border: white 30px solid;
+    padding: 5px;
+    width: 50%;
+    min-width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+.controls{
+    position: absolute;
+    display: flex;
+    top: 450px;
+    width: 400px;
+    left: -200px;
+    margin: 0 50%; 
+}
+
+.dpad{
+    left: 25px;
+    position: relative;
+    left: 50px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} 
+
+.dpad > div { 
+    width: 50px;
+    height: 50px;
+
+}
+
+.center, .up, .down, .left,.right{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    display: flex;
+    background-color: #888;
+    width: 50px;
+    height: 50px;
+}
+
+.down{
+    border-color:   #888 #6d6d6d #6d6d6d #888;
+}
+
+.up{
+
+    border-color:   #888 #6d6d6d #888 #888;
+}
+
+.left{
+
+    border-color:   #888 #888 #888 #888;
+}
+
+button{
+    padding: 0;
+}
+
+button:focus{
+    outline: none;
+}
+
+.right{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color:   #888 #6d6d6d #6d6d6d #888;
+}
+
+.center{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color:   #888 #888 #888 #888;
+}
+.b-button:focus{
+    outline: none;
+}
+
+.b-button{
+    background-color:#888 ;
+    border-color: #6d6d6d;
+    left: 120px;
+    top: 75px;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.a-button:focus{
+    outline: none;
+}
+
+.a-button{
+    background-color:#888 ;
+    border-color: #6d6d6d;
+    top:25px;
+    left: 120px;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
